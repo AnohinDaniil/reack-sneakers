@@ -8,7 +8,7 @@ function Header(props) {
 
   return (
     <header>
-      <Link className="linkStyle" to="">
+      <Link className="linkStyle" to="/reack-sneakers/">
         <div className="headerLeft">
           <img width={40} height={40} src="img/logo.png" alt="Logo" />
           <div>
@@ -22,7 +22,7 @@ function Header(props) {
           <img width={18} height={17} src="img/telega.svg" alt="Telega" />
           <b>{totalPrice} руб.</b>
         </li>
-        <Link className="linkStyle" to="favorites">
+        <Link className="linkStyle" to="/reack-sneakers/favorites">
           <li>
             <img
               width={18}
@@ -33,7 +33,7 @@ function Header(props) {
             <span>Закладки</span>
           </li>
         </Link>
-        <Link className="linkStyle" to="orders">
+        <Link className="linkStyle" to="/reack-sneakers/orders">
           <li>
             <img width={18} height={18} src="img/profile.svg" alt="Profile" />
             <span>Профиль</span>

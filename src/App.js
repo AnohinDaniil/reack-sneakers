@@ -146,9 +146,9 @@ function App() {
         />
         <Header onClickCart={() => setCartOpened(true)} />
 
-        <Routes>
+        <Routes basename="/reack-sneakers">
           <Route
-            path="reack-sneakers/"
+            path="/"
             element={
               <Home
                 searchCard={searchCard}
@@ -158,9 +158,9 @@ function App() {
               />
             }
           />
-          <Route path="reack-sneakers/favorites" element={<Favorites />} />
+          <Route path="/favorites" element={<Favorites />} />
 
-          <Route path="reack-sneakers/orders" element={<Orders />} />
+          <Route path="/orders" element={<Orders />} />
         </Routes>
       </div>
     </AppContext.Provider>
