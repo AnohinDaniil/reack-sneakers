@@ -148,7 +148,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/reack-sneakers"
+            path="/reack-sneakers/"
             element={
               <Home
                 searchCard={searchCard}

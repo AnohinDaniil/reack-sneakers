@@ -25,7 +25,7 @@ function Orders(){
     return(
         <div className="content">
             <div className="pageTitle">
-            <Link className="linkStyle" to="reack-sneakers/">
+            <Link className="linkStyle" to="/reack-sneakers/">
               <img width={35} height={35} src="img/back-to-Home.svg"/>
             </Link>
             <h1>
