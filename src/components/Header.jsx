@@ -10,7 +10,7 @@ function Header(props) {
     <header>
       <Link className="linkStyle" to="">
         <div className="headerLeft">
-          <img width={40} height={40} src="/img/logo.png" alt="Logo" />
+          <img width={40} height={40} src="img/logo.png" alt="Logo" />
           <div>
             <h3>React sneakers</h3>
             <p>Магазин лучших кроссовок</p>
