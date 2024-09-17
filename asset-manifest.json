@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/reack-sneakers/static/css/main.d00c47c4.css",
-    "main.js": "/reack-sneakers/static/js/main.89ee3f0f.js",
+    "main.css": "/reack-sneakers/static/css/main.68eaa369.css",
+    "main.js": "/reack-sneakers/static/js/main.5f9ebe06.js",
     "index.html": "/reack-sneakers/index.html",
-    "main.d00c47c4.css.map": "/reack-sneakers/static/css/main.d00c47c4.css.map",
-    "main.89ee3f0f.js.map": "/reack-sneakers/static/js/main.89ee3f0f.js.map"
+    "main.68eaa369.css.map": "/reack-sneakers/static/css/main.68eaa369.css.map",
+    "main.5f9ebe06.js.map": "/reack-sneakers/static/js/main.5f9ebe06.js.map"
   },
   "entrypoints": [
-    "static/css/main.d00c47c4.css",
-    "static/js/main.89ee3f0f.js"
+    "static/css/main.68eaa369.css",
+    "static/js/main.5f9ebe06.js"
   ]
 }
