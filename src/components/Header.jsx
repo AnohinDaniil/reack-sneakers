@@ -3,8 +3,7 @@ import React from "react";
 import { useCart } from "../hooks/useCart";
 
 function Header(props) {
-
-  const {totalPrice} = useCart();
+  const { totalPrice } = useCart();
 
   return (
     <header>
@@ -24,12 +23,7 @@ function Header(props) {
         </li>
         <Link className="linkStyle" to="/reack-sneakers/favorites">
           <li>
-            <img
-              width={18}
-              height={16}
-              src="img/favorits.svg"
-              alt="Favorits"
-            />
+            <img width={18} height={16} src="img/favorits.svg" alt="Favorits" />
             <span>Закладки</span>
           </li>
         </Link>

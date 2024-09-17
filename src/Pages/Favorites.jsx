@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Card from "../components/Card"
 import AppContext from "../context";
-import Info from "../components/Info";
+import PageInfo from "../components/PageInfo.jsx";
 
 function Favorites(){
 
@@ -30,11 +30,10 @@ function Favorites(){
               ))}
             </div>
             ) : (
-            <Info 
+            <PageInfo 
               title={"Закладок нет :("} 
               description={"Вы ничего не добавляли в закладки" }
-              image={"img/favorits-empty.jpg" }
-              linkTo={true}/>
+              image={"img/favorits-empty.jpg" }/>
             )
           }
       </div>

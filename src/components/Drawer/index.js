@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import AppContext from "../../context";
 
-import Info from "../Info";
+import DrawerInfo from "../DrawerInfo";
 import { useCart } from "../../hooks/useCart";
 
 import styles from "./Drawer.module.scss"; 
@@ -94,10 +94,11 @@ function Drawer({ onClose, onRemove, cartOpened}) {
             </div>
           </div>
         ) : (
-          <Info 
+          <DrawerInfo 
             title={isOrderComplete ? "Заказ оформлен!" : "Корзина пустая"} 
             description={isOrderComplete ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : "Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ." }
-            image={isOrderComplete ? "img/complete-order.jpg" : "img/cart-empty.jpg" }/>
+            image={isOrderComplete ? "img/complete-order.jpg" : "img/cart-empty.jpg" }
+            setIsOrderComplete={setIsOrderComplete}/>
         )}
       </div>
     </div>

@@ -16,7 +16,7 @@ function Card({
   
   const {isItemAdded, isItemFavorite} = React.useContext(AppContext);
 
-  const obj = {id, parentId: id, title, image, price}
+  const obj = {id, parentId: parentId ? parentId : id, title, image, price}
 
   const onAddItem = () => {
     onPlus(obj);
@@ -50,7 +50,7 @@ function Card({
               <img
                 width={32}
                 height={32}
-                src={isItemFavorite(id) ? "img/heart-like.svg" : "img/heart-unlike.svg"}
+                src={isItemFavorite(id, parentId) ? "img/heart-like.svg" : "img/heart-unlike.svg"}
                 alt="Heart-unlike"
                 onClick={onFavoriteItem}
               />)

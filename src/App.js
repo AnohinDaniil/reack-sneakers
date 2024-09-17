@@ -63,7 +63,7 @@ function App() {
 
   const onAddToCart = async (obj) => {
     try {
-      const findItem = cartItems.find((item) => Number(item.parentId) == Number(obj.id));
+      const findItem = cartItems.find((item) => Number(item.parentId) == Number(obj.parentId));
       if (findItem) {
         await onRemoveItem(findItem.id);
       } else {
@@ -87,7 +87,7 @@ function App() {
 
   const onAddToFavorite = async (obj) => {
     try {
-      const findItem = favorites.find((item) => Number(item.parentId) == Number(obj.id))
+      const findItem = favorites.find((item) => Number(item.parentId) == Number(obj.parentId))
       if (findItem) {
         await onRemoveFavorite(findItem.id);
       } else {
@@ -113,15 +113,12 @@ function App() {
     setSearchCard(event.target.value);
   };
 
-  const isItemAdded = (id) => {
-    return cartItems.some((item) => Number(item.parentId) == Number(id));
-    //console.log(Number(id));
+  const isItemAdded = (id, parentId) => {
+    return parentId ? cartItems.some((item) => Number(item.parentId) == Number(parentId)) : cartItems.some((item) => Number(item.parentId) == Number(id));
   };
 
-  const isItemFavorite = (id) => {
-    console.log(Number(id));
-    items.map((obj) => obj.parentId)
-    return favorites.some((item) => Number(item.parentId) == Number(id));
+  const isItemFavorite = (id, parentId) => {
+    return parentId ? favorites.some((item) => Number(item.parentId) == Number(parentId)) : favorites.some((item) => Number(item.parentId) == Number(id));
   };
 
   return (

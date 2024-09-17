@@ -172,37 +172,14 @@ header{
   
 }
 
-.cartEmpty{
+
+.statusCart{
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: auto;
   width: 320px;
-  
-
-  .cartInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-
-    img{
-      margin-bottom: 20px;
-    }
-
-    b{
-      font-size: 22px;
-      font-weight: 600;
-      margin-bottom: 9px;
-    }
-
-    p{
-      text-align: center;
-      color: #5C5C5C;
-      opacity: 40%;
-    }
-
-  }
 
   .greenButton{
     display: flex;
@@ -224,6 +201,62 @@ header{
       transition: transform 0.15s ease-in-out;
     }
   }
+}
+
+.statusFavorOrOrder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 500px;
+  width: 320px;
+
+  .greenButton{
+    display: flex;
+    width: 245px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover{
+      img{
+        transform: translateX(-5px);
+      }
+    }
+
+    img{
+      position: absolute;
+      top: 22px;
+      left: 30px;
+      transition: transform 0.15s ease-in-out;
+    }
+  }
+}
+
+.statusInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  img{
+    margin-bottom: 20px;
+  }
+
+  b{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 9px;
+  }
+
+  p{
+    text-align: center;
+    white-space:  pre-line;
+    color: #5C5C5C;
+    opacity: 40%;
+  }
+
 }
 
 .greenButton{
